@@ -1,10 +1,14 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import CourseList from './componets/CourseList';
+
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
-        <h1>React Redux Hooks</h1>
-    </div>
+    <Provider store={store}>
+      <CourseList />
+    </Provider>
   );
 }
 

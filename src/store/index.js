@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 };
 
 /* reduce */
-function courses(state, action) {
+function courses(state = INITIAL_STATE, action) {
     switch (action.type) {
         case 'ADD_COURSE':
             return { ...state, data: [...state.data, action.title] };
